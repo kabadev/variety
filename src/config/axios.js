@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:5000/api";
+axios.defaults.baseURL = "https://inquisitive-khakis-eel.cyclic.app/api";
 
 let refresh = false;
 
