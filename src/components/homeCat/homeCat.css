@@ -1,0 +1,129 @@
+.home_cat {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  margin-bottom: 20px;
+}
+
+.category-item {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border: 1px solid var(--cultured);
+  border-radius: var(--border-radius-md);
+  scroll-snap-align: start;
+}
+
+.category-img-box {
+  background: var(--cultured);
+  border: 1px solid hsl(0, 0%, 80%);
+  padding: 10px;
+  border-radius: var(--border-radius-sm);
+}
+
+.category-content-box {
+  width: 100%;
+}
+
+.category-content-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.category-item-title {
+  color: var(--eerie-black);
+  font-size: var(--fs-9);
+  font-weight: var(--weight-600);
+  text-transform: uppercase;
+}
+
+.category-item-amount {
+  color: var(--sonic-silver);
+  font-size: var(--fs-11);
+}
+
+.category-btn {
+  color: var(--salmon-pink);
+  font-size: var(--fs-9);
+  font-weight: var(--weight-500);
+  text-transform: capitalize;
+}
+
+/*-----------------------------------*\
+  #RESPONSIVE
+\*-----------------------------------*/
+
+/**
+ * responsive larger than 480px screen
+ */
+
+/**
+ * responsive larger than 570px screen
+ */
+
+@media (min-width: 570px) {
+  /**
+   * #CATEGORY
+   */
+
+  .category-item-container {
+    gap: 30px;
+  }
+
+  .category-item {
+    min-width: calc(50% - 15px);
+  }
+}
+
+/**
+ * responsive larger than 768px screen
+ */
+
+@media (min-width: 768px) {
+  /**
+   * #CATEGORY 
+   */
+
+  .category-img-box {
+    padding: 20px;
+  }
+}
+
+/**
+ * responsive larger than 1024px screen
+ */
+
+@media (min-width: 1024px) {
+  /**
+   * #CATEGORY 
+   */
+
+  .category-item {
+    min-width: calc(33.33% - 20px);
+  }
+
+  .category-img-box {
+    padding: 10px;
+  }
+}
+
+/**
+ * responsive larger than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+  /**
+   * #CATEGORY
+   */
+
+  .category-item {
+    min-width: calc(25% - 22.5px);
+  }
+
+  .category-item-title {
+    --fs-9: 0.824rem;
+  }
+}
