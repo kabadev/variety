@@ -40,6 +40,8 @@
 @media (max-width: 768px) {
   .auth {
     flex-direction: column;
+    width: 100%;
+    margin: 10px;
   }
   .auth .auth_form,
   .auth .auth_banner {
